@@ -1,3 +1,12 @@
+header{
+    margin: 2em;
+}
+
+header h1{
+    text-align: center;
+}
+
+
 .box{
     height: auto;
     margin-left: auto;
