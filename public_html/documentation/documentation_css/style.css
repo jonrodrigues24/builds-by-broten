@@ -22,11 +22,24 @@ li{
     padding: 1em;
 }
 
-h2{
+.figure-img{
+    width: 100px;
+    height: 100px;
+}
 
+.figure-caption{
+    color: white;
+}
 
-    padding-left: 3em;
-    padding-right: 3em;
-    margin-bottom: 0;
+.row h2{
+    margin-bottom: 0em;
+}
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
 }
 
