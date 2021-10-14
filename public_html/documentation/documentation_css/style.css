@@ -4,6 +4,9 @@ header{
 
 header h1{
     text-align: center;
+    color: antiquewhite;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 
@@ -13,15 +16,8 @@ header h1{
     margin-right: auto;
 }
 
-body{
-    background-image: url("https://www.photosgrams.com/proxy_image.php?url=https%3A%2F%2Fscontent-sjc3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2F241970490_995284987930119_413809197541248811_n.jpg%3F_nc_ht%3Dscontent-sjc3-1.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3DJvvmHAeDcpkAX_oy5pB%26edm%3DAJBgZrYBAAAA%26ccb%3D7-4%26oh%3D75ed0f81c9d74083bd8df41a786b1bdc%26oe%3D616D9C3C%26_nc_sid%3D78c662");
 
-}
 
-body .bg-image{
-
-    position: fixed;
-}
 
 li{
     opacity: 100;
