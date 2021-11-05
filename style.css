@@ -1,14 +1,51 @@
 
+.about-jens{
+
+    background-color: rgba(76, 198, 219, 1);
+
+}
+.card-img{
+    height: 40em;
+    width: 32em;
+}
+
+/*.card-title{*/
+/*    text-align: center;*/
+/*    padding-top: 2em;*/
+/*}*/
+
+/*.card-text{*/
+/*    text-align: center;*/
+/*    padding: 4em;*/
+/*}*/
+
+.card{
+    background-color: rgba(148, 101, 39, 1);
+}
+
 
 
 .contact-form{
 
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    border: 1em red;
 
 
 }
 
 .jumbo{
-    background-image: url("");
+    background-image: url("https://www.dropbox.com/s/yvo5rfg5rd91ped/HeaderImage.jpg?raw=1");
+    background-size: cover;
+    color: white;
+    font-family: Monospaced;
+    /*background-size: 50em 10em;*/
+    background-repeat: no-repeat;
+    margin-top: 5em; /*5em on previous one*/
+}
+
+
+
+.request-quote-button{
+    align-items: center;
 }
