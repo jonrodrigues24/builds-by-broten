@@ -58,27 +58,21 @@
 
 <section class="jumbo h-50 w-100">
 
+    <div class="container-fluid">
 
-    <div class="jumbotron jumbotron-fluid">
-        <img src="https://www.dropbox.com/s/860491n8jljlpw2/BuildsByBroten_Logo_Horizontal.png?raw=1"
-             alt="logo" class="d-inline-block align-text-top m-1 img-fluid">
-        <p class="lead fs-2">Custom Furniture Maker. Combining my passions for Woodworking, Resin, and Welding.</p>
-        <hr class="my-4">
-        <p class="lead request-quote-button">
-            <a class="btn btn-primary btn-lg " href="#" role="button">Request a Quote</a>
-        </p>
+        <div class="jumbotron jumbotron-fluid">
+            <img src="https://www.dropbox.com/s/860491n8jljlpw2/BuildsByBroten_Logo_Horizontal.png?raw=1"
+                 alt="logo" class="d-inline-block align-text-top m-1 img-fluid">
+            <p class="lead fs-2">Custom Furniture Maker. Combining my passions for Woodworking, Resin, and Welding.</p>
+            <hr class="my-4">
+            <p class="lead request-quote-button">
+                <a class="btn btn-primary btn-lg " href="#" role="button">Request a Quote</a>
+            </p>
+        </div>
+
     </div>
 
 </section>
-
-
-<!--<div class="jumbotron jumbo w-100">-->
-<!--    <div class="container">-->
-<!--        <h1 class="display-4">Fluid jumbotron</h1>-->
-<!--        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
-<!--    </div>-->
-<!--</div>-->
-
 
 
 
@@ -87,12 +81,16 @@
     <div class="card w-100">
         <div class="row no-gutters">
             <div class="col">
-                <img class="card-img img-fluid col-lg-6 col-md-6 col-sm-12" src="https://www.dropbox.com/s/6j5vxy8u0d6q1vk/653A9994.jpg?raw=1" alt="About Jens">
+                <img class="card-img img-fluid col-lg-6 col-md-6 col-sm-12"
+                     src="https://www.dropbox.com/s/6j5vxy8u0d6q1vk/653A9994.jpg?raw=1" alt="About Jens">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 about-jens">
                 <div class="card-body my-auto mx-auto">
                     <h2 class="card-title">About Jens</h2>
-                    <p class="card-text">Builds by Broten is a Custom Furniture Business based out of Albuquerque, New Mexico. We create unique, one of a kind furniture that will make any room stand out. Each piece is thoughtfully designed and built by owner Jens Broten, combining his passions for welding and wood working to produce quality, custom furniture.</p>
+                    <p class="card-text">Builds by Broten is a Custom Furniture Business based out of Albuquerque, New
+                        Mexico. We create unique, one of a kind furniture that will make any room stand out. Each piece
+                        is thoughtfully designed and built by owner Jens Broten, combining his passions for welding and
+                        wood working to produce quality, custom furniture.</p>
                 </div>
             </div>
         </div>
@@ -100,49 +98,87 @@
 </section>
 
 
+<!--<div class="container px-4">-->
+<!--    <div class="row gx-5">-->
+<!--        <div class="col">-->
+<!--            &lt;!&ndash;            <div class="p-3 border bg-light">Custom column padding</div>&ndash;&gt;-->
+<!--            <img class="p-3 mx-auto d-block  border bg-light col-lg-6 col-md-6 col-sm-12"-->
+<!--                 src="https://www.dropbox.com/s/6j5vxy8u0d6q1vk/653A9994.jpg?raw=1" alt="About Jens">-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            &lt;!&ndash;            <div class="p-3 border bg-light">Custom column padding</div>&ndash;&gt;-->
+<!--            <h2 class="card-title">About Jens</h2>-->
+<!--            <p class="card-text">Builds by Broten is a Custom Furniture Business based out of Albuquerque, New Mexico.-->
+<!--                We create unique, one of a kind furniture that will make any room stand out. Each piece is thoughtfully-->
+<!--                designed and built by owner Jens Broten, combining his passions for welding and wood working to produce-->
+<!--                quality, custom furniture.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 
 <section class="contact-form">
 
 
     <div class="container">
 
-        <form class="row g-3" action="./apis/" id="contact" method="post" novalidate>
+        <form class="g-3" action="./apis/" id="contact" method="post" novalidate>
 
-            <div class="col-md-6">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="inputPhone" name="inputPhone">
+                </div>
+
             </div>
 
-            <div class="col-md-6">
-                <label for="inputPhone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="inputPhone" name="inputPhone">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <label for="inputProductType" class="form-label">Product Type</label>
+                    <input type="text" class="form-control" id="inputProductType" name="inputProductType"
+                           placeholder="Ex: Table">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputWood" class="form-label">Select Wood</label>
+                    <select id="inputWood" class="form-select" name="inputWood">
+                        <option>...</option>
+                        <option selected>Maple</option>
+                        <option selected>Walnut</option>
+                        <option selected>Cherry</option>
+                        <option selected>Oak</option>
+                        <option selected>Other</option>
+                    </select>
+                </div>
+
             </div>
 
-            <div class="col-6">
-                <label for="inputProductType" class="form-label">Product Type</label>
-                <input type="text" class="form-control" id="inputProductType" name="inputProductType" placeholder="Ex: Table">
+            <div class="row">
+
+                <div class="col-12">
+                    <label for="inputDetails" class="form-label">Additional details</label>
+                    <input type="text" class="form-control" id="inputDetails" placeholder="Ex: River theme with resin"
+                           name="inputDetails">
+                </div>
+
             </div>
 
-            <div class="col-md-6">
-                <label for="inputWood" class="form-label">Select Wood</label>
-                <select id="inputWood" class="form-select" name="inputWood">
-                    <option>...</option>
-                    <option selected>Maple</option>
-                    <option selected>Walnut</option>
-                    <option selected>Cherry</option>
-                    <option selected>Oak</option>
-                    <option selected>Other</option>
-                </select>
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="g-recaptcha" data-sitekey="6LdlhxcdAAAAABTEXQCGlgDFOXejFeHZtUUbDgod"></div>
+                    <button type="submit" class="btn btn-primary">Contact Me!</button>
+                </div>
+
             </div>
 
-            <div class="col-12">
-                <label for="inputDetails" class="form-label">Additional details</label>
-                <input type="text" class="form-control" id="inputDetails" placeholder="Ex: River theme with resin" name="inputDetails">
-            </div>
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Contact Me!</button>
-            </div>
 
         </form>
 
@@ -155,12 +191,18 @@
 </section>
 
 <!-- jquery for form dependencies -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+        integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
