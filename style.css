@@ -1,11 +1,4 @@
 
-.about-jens{
-
-    padding-bottom: 5vh;
-    text-align: center;
-
-
-}
 
 .request-quote-button{
 
@@ -135,11 +128,19 @@
 .jens-bio-co{
 
     font-family: Serif;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    /*margin-top: 1vh;*/
+    /*margin-bottom: 1vh;*/
 }
 
 .jens-image-co{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    /*margin-top: 1vh;*/
+    /*margin-bottom: 1vh;*/
+}
+
+
+.about-jens{
+
+    text-align: center;
+
+
 }
