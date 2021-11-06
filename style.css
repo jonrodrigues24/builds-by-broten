@@ -1,13 +1,69 @@
 
 .about-jens{
 
-    background-color: rgba(76, 198, 219, 1);
+    padding-bottom: 5vh;
+    text-align: center;
+
 
 }
-.card-img{
-    height: 40em;
-    width: 32em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.p-1{
+
+    padding: .15rem !important;
 }
+
+.bio-row{
+    padding: 1rem;
+}
+
+
+
+.bio-background{
+
+    margin: auto;
+
+    background-color: #D9D9D9;
+}
+
+/*.jens-image-co .jens-image-co{*/
+/*    padding-top: 2em;*/
+/*}*/
+
+.title{
+
+    padding-top: 5vh;
+
+    text-align: center;
+}
+.jens-image{
+    max-height: 15rem;
+    width: 15rem;
+    border-color: #8C5626 !important;
+    background-color: #8C5626 !important;
+}
+
+
 
 /*.card-title{*/
 /*    text-align: center;*/
@@ -44,6 +100,13 @@
 
 
 
-.request-quote-button{
+.lead{
     align-items: center;
+    margin-bottom: 0rem !important;
+
+}
+
+.jens-bio-co{
+
+    font-family: Serif;
 }
