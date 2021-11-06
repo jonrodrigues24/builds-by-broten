@@ -7,6 +7,13 @@
 
 }
 
+.request-quote-button{
+
+    /*margin-right: 55vh;*/
+    /*margin-left: 55vh;*/
+    padding-bottom: 2.5vh;
+}
+
 
 
 
@@ -14,8 +21,10 @@
 
 .jumbo-text {
     animation-duration: 10s;
+    /*animation-name: spinner-grow;*/
     animation-name: spinner-grow;
     animation-iteration-count: inherit;
+
 }
 
 
@@ -68,7 +77,8 @@
 
 .title{
 
-    padding-top: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
 
     text-align: center;
 }
@@ -125,4 +135,11 @@
 .jens-bio-co{
 
     font-family: Serif;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.jens-image-co{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
