@@ -66,7 +66,7 @@
             <p class="lead fs-2 jumbo-text">Custom Furniture Maker. Combining passions for Woodworking, Resin, and Welding.</p>
             <hr class="my-4">
             <p class="lead request-quote-button hover-overlay mask">
-                <a class="btn btn-primary btn-lg ms-auto d-block rounded-pill " href="#" role="button">Request a Quote</a>
+                <a class="btn shadow-lg btn-primary btn-lg ms-auto d-block rounded-pill " href="#" role="button">Request a Quote</a>
             </p>
         </div>
 
@@ -139,8 +139,8 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
 
         </div>
-        <div class="carousel-inner row">
-            <div class="carousel-item active ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active col">
                 <img src="https://www.dropbox.com/s/t7nt5p2p7pirnml/653A9854.jpg?raw=1" class="d-block carousel-contain" alt="...">
             </div>
             <div class="carousel-item box-a">
@@ -204,31 +204,31 @@
 
         <form class="g-3" action="./apis/" id="contact" method="post" novalidate>
 
-            <div class="row">
+            <div class="row ">
 
-                <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                <div class="col-md-6 form-row border rounded ">
+                    <label for="inputEmail" class="form-label mx-auto d-block">Email</label>
+                    <input type="email" class="form-control mx-auto d-block" id="inputEmail" name="inputEmail">
                 </div>
 
-                <div class="col-md-6">
-                    <label for="inputPhone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="inputPhone" name="inputPhone">
+                <div class="col-md-6 form-row border rounded ">
+                    <label for="inputPhone" class="form-label mx-auto d-block" >Phone</label>
+                    <input type="tel" class="form-control mx-auto d-block" id="inputPhone" name="inputPhone">
                 </div>
 
             </div>
 
-            <div class="row">
+            <div class="row ">
 
-                <div class="col-md-6">
-                    <label for="inputProductType" class="form-label">Product Type</label>
-                    <input type="text" class="form-control" id="inputProductType" name="inputProductType"
+                <div class="col-md-6 form-row border rounded ">
+                    <label for="inputProductType" class="form-label mx-auto d-block">Product Type</label>
+                    <input type="text" class="form-control mx-auto d-block" id="inputProductType" name="inputProductType"
                            placeholder="Ex: Table">
                 </div>
 
-                <div class="col-md-6">
-                    <label for="inputWood" class="form-label">Select Wood</label>
-                    <select id="inputWood" class="form-select" name="inputWood">
+                <div class="col-md-6 form-row border rounded ">
+                    <label for="inputWood" class="form-label mx-auto d-block">Select Wood</label>
+                    <select id="inputWood" class="form-select mx-auto d-block" name="inputWood">
                         <option>...</option>
                         <option selected>Maple</option>
                         <option selected>Walnut</option>
@@ -242,9 +242,9 @@
 
             <div class="row">
 
-                <div class="col-12">
-                    <label for="inputDetails" class="form-label">Additional details</label>
-                    <input type="text" class="form-control" id="inputDetails" placeholder="Ex: River theme with resin"
+                <div class="col-12 form-row border rounded ">
+                    <label for="inputDetails" class="form-label mx-auto d-block">Additional details</label>
+                    <input type="text" class="form-control mx-auto d-block" id="inputDetails" placeholder="Ex: River theme with resin"
                            name="inputDetails">
                 </div>
 
@@ -252,9 +252,10 @@
 
             <div class="row">
 
-                <div class="col-12">
-                    <div class="g-recaptcha" data-sitekey="6LdlhxcdAAAAABTEXQCGlgDFOXejFeHZtUUbDgod"></div>
-                    <button type="submit" class="btn btn-primary">Contact Me!</button>
+                <div class="col-12 recaptcha">
+                    <div class="g-recaptcha " data-sitekey="6LdlhxcdAAAAABTEXQCGlgDFOXejFeHZtUUbDgod"></div>
+                    <br>
+                    <button type="submit" class="btn btn-primary contact-me form-row">Contact Me!</button>
                 </div>
 
             </div>
@@ -267,6 +268,14 @@
 
     </div>
 
+
+</section>
+
+
+<section class="bg-dark text-light p-5 container-fluid">
+
+
+    <h5>Powered by Jonathan Rodrigues</h5>
 
 </section>
 

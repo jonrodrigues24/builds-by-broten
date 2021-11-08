@@ -5,6 +5,12 @@
     /*margin-right: 55vh;*/
     /*margin-left: 55vh;*/
     padding-bottom: 2.5vh;
+
+}
+
+.btn-primary{
+    background-color: #733C1D;
+    border-color: #733C1D;
 }
 
 
@@ -104,6 +110,18 @@
 
     border: 1em red;
 
+    background-color: #D9D9D9;
+
+
+}
+
+.form-row{
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+.test-color{
+    background-color: gray;
 
 }
 
@@ -146,11 +164,28 @@
 }
 
 .carousel-contain {
-background-color: #044D8C;
 
-    height: 50vh;
-    margin: auto;
+
+    height: 30vh;
+    width: 45vh;
+    --bs-gutter-x: 0rem !important;
 }
+
+
+/*.row{*/
+/*    --bs-gutter-x: 0rem !important;*/
+/*}*/
+
+body{
+    background-color: #044D8C;
+}
+
+.recaptcha {
+    text-align: center;
+
+
+}
+
 
 
 
@@ -164,3 +199,35 @@ background-color: #044D8C;
 /*    max-width: 40vh;*/
 /*}*/
 
+.form-label{
+ text-align: center;
+    font-family: Serif, serif;
+    font-size: 1.25em;
+
+}
+
+/*.form-row{*/
+/*    border-color: #8C5626 !important;*/
+/*    border-width: .25rem !important;*/
+/*}*/
+
+.form-control {
+    text-align: center;
+}
+
+.form-select {
+    text-align: center;
+}
+ .g-recaptcha{
+     display: inline-block;
+     margin-top: .5em;
+ }
+
+ .contact-me{
+     margin-top: .5em;
+     margin-bottom: .5em;
+ }
+
+ .footer{
+text-align: center;
+ }
