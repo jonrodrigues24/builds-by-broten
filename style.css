@@ -81,6 +81,11 @@
 
     text-align: center;
 }
+
+.title-2{
+    background-color: #044D8C;
+    color: white;
+}
 .jens-image{
     max-height: 15rem;
     width: 15rem;
@@ -168,6 +173,8 @@
 
     height: 30vh;
     width: 45vh;
+    /*width: 640px;*/
+    /*height: 480px;*/
     --bs-gutter-x: 0rem !important;
 }
 
@@ -177,7 +184,8 @@
 /*}*/
 
 body{
-    background-color: #044D8C;
+    /*background-color: #044D8C;*/
+    background-color: #D9D9D9;
 }
 
 .recaptcha {
@@ -231,3 +239,18 @@ body{
  .footer{
 text-align: center;
  }
+
+ .instagram{
+     background-color: rgba(148, 101, 39, 1);
+ }
+
+.powered-by{
+    margin-top: 1em;
+}
+
+.title-about{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    text-align: center;
+}
