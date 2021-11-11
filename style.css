@@ -26,6 +26,19 @@
 
 }
 
+.text-border{
+    text-shadow: 0 0 10px #402313;
+    text-align: center;
+
+
+}
+
+.logo{
+
+
+
+}
+
 
 @keyframes slidein {
     from {
@@ -78,7 +91,7 @@
 
     padding-top: 3vh;
     padding-bottom: 2vh;
-
+    font-family: Serif, serif;
     text-align: center;
 }
 
@@ -92,6 +105,7 @@
     border-color: #8C5626 !important;
     background-color: #8C5626 !important;
 }
+
 
 
 
