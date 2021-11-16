@@ -5,7 +5,7 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 const formData = require("form-data")
 const Mailgun = require("mailgun.js")
 const mailgun = new Mailgun(formData)
-require('dotenv').config()
+// require('dotenv').config()
 const {check, validationResult} = require("express-validator")
 const {request, response} = require("express");
 
@@ -37,7 +37,7 @@ const handlePostRequest = (request, response) => {
 
     if (request.recaptcha.error) {
         return response.send(
-            `<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>There was a recaptcha error. Please try again</div>`
+            `<div class='alert alert-danger' role='alert'><strong>Oh Snap 1!</strong>There was a recaptcha error. Please try again</div>`
         )
     }
 
@@ -45,7 +45,7 @@ const handlePostRequest = (request, response) => {
 
     if(errors.isEmpty() === false){
         const currentError = errors.array()[0]
-        return response.send(`<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>${currentError.msg}</div>`)
+        return response.send(`<div class='alert alert-danger' role='alert'><strong>Oh Snap 2!</strong>${currentError.msg}</div>`)
     }
 
     const {inputEmail, inputPhone, inputProductType, inputWood, inputDetails} = request.body
@@ -54,17 +54,17 @@ const handlePostRequest = (request, response) => {
         to: process.env.MAIL_RECIPIENT,
         from: `${inputEmail} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${inputEmail}: ${inputPhone}`,
-        text: inputDetails, inputWood, inputPhone, inputProductType
+        text: `${inputDetails}, ${inputWood}, ${inputPhone}, ${inputProductType}`
     }
 
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
         response.send(
-            `<div class='alert alert-success' role='alert' >${JSON.stringify(msg)}</div>`
+            `<div class='alert alert-success' role='alert' >email successfully sent</div>`
         ))
         .catch(err =>
         response.send(
-            `<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>${err}</div>`
+            `<div class='alert alert-danger' role='alert'><strong>Oh Snap 3!</strong>${err}</div>`
         ))
 
 }

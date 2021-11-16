@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    document.getElementById("contact")
+    // document.getElementById("contact")
     $("#contact").validate({ //these are json
         debug: true,
         errorClass: "alert alert-danger",
@@ -13,21 +13,19 @@ $(document).ready(function(){
                 required: true
             },
             inputPhone: {
-                tel: true,
+                phoneUS: true,
                 required: true
             },
             inputProductType: {
-                text: true,
                 required: false,
-                maxLength: 2000
+                maxlength: 2000
             },
             inputWood: {
                 required: false,
             },
             inputDetails: {
-                text: true,
                 required: false,
-                maxLength: 2000
+                maxlength: 2000
             }
 
         },
